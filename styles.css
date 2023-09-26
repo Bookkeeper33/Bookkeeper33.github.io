@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #201f1f;
+    color: #4dca6e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    height: 100px;
+    padding-top: 25px;
+    font-family: "Black Ops One", monospace, cursive;
+    color: rgb(190, 80, 40);
+    background-color: rgb(41, 31, 31);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-family: monospace, "Lucida Sans", Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+footer,
+a {
+    font-family: "Black Ops One", monospace, cursive;
+    color: rgb(190, 80, 40);
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: monospace, "Lucida Sans", Verdana, sans-serif;
+}
+
+.sign {
+    font-size: 5rem;
+}
+
+.score-message {
+    font-size: 1.8rem;
+}
+
+.game-wrapper {
+    font-size: 10rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.game-wrapper > div:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: 1.5rem;
+    font-family: monospace, "sans-serif";
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #312626;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+.modal h3 {
+    font-size: 2rem;
+    padding-bottom: 45px;
+}
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.reset {
+    background-color: #4dca6e;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(21, 65, 52);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.reset:hover {
+    transform: scaleX(1.1) scaleY(1.1);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto:wght@100&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Rock, Paper & Scissors</title>
+    </head>
+    <body>
+        <h1>Rock, Paper & Scissors</h1>
+        <div class="container">
+            <div class="scoreboard">
+                <h3 id="info">Choose your weapon</h3>
+                <h3 id="message">First to score 5 points wins the game</h3>
+                <div class="score-wrapper">
+                    <div class="score-box">
+                        <div class="sign">❓</div>
+                        <p class="player-score">Player score: 0</p>
+                    </div>
+                    <div class="score-box">
+                        <div class="sign">❓</div>
+                        <p class="computer-score">Computer score: 0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="game-wrapper">
+                <div class="rock">✊</div>
+                <div class="paper">🤚</div>
+                <div class="scissors">✌️</div>
+            </div>
+        </div>
+        <div class="modal">
+            <h3 id="results"></h3>
+            <button class="reset">Play again</button>
+        </div>
+
+        <footer>Created by &copy;<a href="https://github.com/Bookkeeper33" target="_blank"> Eric Miller</a</footer>
+        <script defer src="script.js"></script>
+    </body>
+</html>
